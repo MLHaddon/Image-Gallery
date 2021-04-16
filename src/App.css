@@ -1,4 +1,11 @@
-nav { background: #2ba0db; }
+#logo {
+  max-width: 75px;
+  height: auto;
+}
+
+nav { 
+  background: #2ba0db62;
+ }
 
 nav ul {
   font-size: 0;
@@ -15,14 +22,12 @@ nav ul li a {
   color: #fff;
   display: block;
   font-size: 14px;
-  padding: 15px 14px;
   transition: 0.3s linear;
 }
 
 nav ul li:hover { background: #126d9b; }
 
 nav ul li ul {
-  border-bottom: 5px solid #2ba0db;
   display: none;
   position: absolute;
   width: 250px;
@@ -36,9 +41,57 @@ nav ul li ul li {
 nav ul li ul li:first-child { border-top: none; }
 
 nav ul li ul li a {
+  max-height: 10%;
   background: #373737;
   display: block;
   padding: 10px 14px;
 }
 
-nav ul li ul li a:hover { background: #126d9b; }
+nav ul li ul li a:hover { background: #129b34fd; }
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
