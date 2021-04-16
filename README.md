@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This project showcases the styling feature of an image gallery that places images within a grid, resizing each image to eliminate margin.
