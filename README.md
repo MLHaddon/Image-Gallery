@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project showcases the styling feature of an image gallery that places images within a grid, resizing each image to eliminate margin.
 The result is a collage of images.
+Pressing the "Add Image" button sends an Axios request to lorumpicsum.com, which supplies an image array with the response.
+The array then maps onto the dom on each request so you can see the collage forming.
 
 ## Available Scripts
 
